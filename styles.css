@@ -1,0 +1,123 @@
+html {
+	box-sizing: border-box;
+	
+	background-image: url("./media/Zoso.png");
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
+	background-attachment: fixed;
+	overflow-x: hidden;
+
+	font-family: "Segoe UI", Frutiger, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+	font-weight: lighter;
+	text-align: center;
+	color: white;
+}
+
+.main-image {
+	margin: auto;
+	position: relative;
+	background-image: url("./media/JimmyPage.png");
+	background-color: black;
+	height: 900px;
+	width: 100%;
+	background-position: 55% 50%;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	filter: grayscale(100%);
+	margin-bottom: 20px;
+}
+
+.main-image:after {
+	content: '';
+	position: absolute;
+	background: white;
+	bottom: -10px;
+	left: 25%;
+	height: 10px;
+	width: 50%;
+	background: radial-gradient(at 50% 0%, white 20%, transparent 70%);
+}
+
+.title {
+	font-family: Copperplate Gothic Light;
+	font-weight: bold;
+	font-size: 50px;
+	padding: 40px;
+}
+
+.accolades {
+	font-family: Copperplate Gothic Light;
+	font-size: 25px;
+	padding-bottom: 40px;
+}
+
+.subtitle {
+	font-family: Copperplate Gothic Light;
+	font-size: 30px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+p {
+	margin: auto;
+	max-width: 1000px;
+	font-size: 20px;
+	padding-bottom: 40px;
+}
+
+.divider {
+	content: '';
+	position: absolute;
+	background: white;
+	margin: auto;
+	left: 35%;
+	height: 2px;
+	width: 30%;
+	/* margin-bottom: 20px; */
+	background: linear-gradient(to right, transparent 0%, white 50%, transparent 100%);
+}
+
+a {
+	color: white;
+}
+
+.combo {
+	display: flex;
+	margin: auto;
+	max-width: 1000px;
+}
+figure {
+	position: relative;
+	width: 40%;
+	aspect-ratio: 4/3;
+	text-align: center;
+}
+iframe {
+	position: absolute;
+	overflow: auto;
+	display: block;
+	height: 90%;
+	width: 100%;
+}
+figcaption {
+	position: absolute;
+	bottom: 0;
+	height: 7%;
+	width: 100%;
+}
+
+/* Scroll bar properties */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(255, 255, 255, 0.8);
+}
